@@ -35,7 +35,7 @@
 
 **安装NDK开发所需的工具**
 
-![安装NDK开发所需的工具](http://upload-images.jianshu.io/upload_images/3270074-e971cc0e2df7c868.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![安装NDK开发所需的工具](https://github.com/alidili/NDK/raw/main/Android%20NDK%E5%BC%80%E5%8F%91%EF%BC%88%E4%B8%80%EF%BC%89%20%E4%BD%BF%E7%94%A8CMake%E6%9E%84%E5%BB%BA%E5%B7%A5%E5%85%B7%E8%BF%9B%E8%A1%8CNDK%E5%BC%80%E5%8F%91/resources/%E5%AE%89%E8%A3%85NDK%E5%BC%80%E5%8F%91%E6%89%80%E9%9C%80%E7%9A%84%E5%B7%A5%E5%85%B7.png)
 
 在SDK Tools中安装以下组件：
 
@@ -47,11 +47,11 @@
 
 **创建NDK项目**
 
-![创建NDK项目](http://upload-images.jianshu.io/upload_images/3270074-cab9fcc82fc0f816.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![创建NDK项目](https://github.com/alidili/NDK/raw/main/Android%20NDK%E5%BC%80%E5%8F%91%EF%BC%88%E4%B8%80%EF%BC%89%20%E4%BD%BF%E7%94%A8CMake%E6%9E%84%E5%BB%BA%E5%B7%A5%E5%85%B7%E8%BF%9B%E8%A1%8CNDK%E5%BC%80%E5%8F%91/resources/%E5%88%9B%E5%BB%BANDK%E9%A1%B9%E7%9B%AE.png)
 
 在创建项目时，勾选【Include C++ support】选项，然后一路下一步，到达【Customize C++ Support】设置页：
 
-![Customize C++ Support](http://upload-images.jianshu.io/upload_images/3270074-ca7631b097798256.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![Customize C++ Support](https://github.com/alidili/NDK/raw/main/Android%20NDK%E5%BC%80%E5%8F%91%EF%BC%88%E4%B8%80%EF%BC%89%20%E4%BD%BF%E7%94%A8CMake%E6%9E%84%E5%BB%BA%E5%B7%A5%E5%85%B7%E8%BF%9B%E8%A1%8CNDK%E5%BC%80%E5%8F%91/resources/Customize%20C%2B%2B%20Support.png)
 
 可以看到三个选项：
 
@@ -68,7 +68,7 @@
 
 看下项目目录：
 
-![项目目录](http://upload-images.jianshu.io/upload_images/3270074-f016faf807930464.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![项目目录](https://github.com/alidili/NDK/raw/main/Android%20NDK%E5%BC%80%E5%8F%91%EF%BC%88%E4%B8%80%EF%BC%89%20%E4%BD%BF%E7%94%A8CMake%E6%9E%84%E5%BB%BA%E5%B7%A5%E5%85%B7%E8%BF%9B%E8%A1%8CNDK%E5%BC%80%E5%8F%91/resources/%E9%A1%B9%E7%9B%AE%E7%9B%AE%E5%BD%95.png)
 
 上图中用红框标识了NDK项目与普通项目的不同之处，下面分别来看看：
 
@@ -216,13 +216,13 @@ public class MainActivity extends AppCompatActivity {
 
 调用方式很简单，代码中已经写了注释，看下效果：
 
-![运行效果](http://upload-images.jianshu.io/upload_images/3270074-0a2ae248f24c36d1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![运行效果](https://github.com/alidili/NDK/raw/main/Android%20NDK%E5%BC%80%E5%8F%91%EF%BC%88%E4%B8%80%EF%BC%89%20%E4%BD%BF%E7%94%A8CMake%E6%9E%84%E5%BB%BA%E5%B7%A5%E5%85%B7%E8%BF%9B%E8%A1%8CNDK%E5%BC%80%E5%8F%91/resources/%E8%BF%90%E8%A1%8C%E6%95%88%E6%9E%9C.png)
 
 **生成so文件**
 
 在CMakeLists.txt中将library的编译模式设置为SHARED模式，点击AS的编译按钮，在app > build > intermediates > cmake > debug > obj目录下会生成不同CPU架构对应的so文件：
 
-![so文件目录](http://upload-images.jianshu.io/upload_images/3270074-676c5d7d1529b5c9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![so文件目录](https://github.com/alidili/NDK/raw/main/Android%20NDK%E5%BC%80%E5%8F%91%EF%BC%88%E4%B8%80%EF%BC%89%20%E4%BD%BF%E7%94%A8CMake%E6%9E%84%E5%BB%BA%E5%B7%A5%E5%85%B7%E8%BF%9B%E8%A1%8CNDK%E5%BC%80%E5%8F%91/resources/so%E6%96%87%E4%BB%B6%E7%9B%AE%E5%BD%95.png)
 
 生成的so文件也可以在其他项目中使用，在项目的app > src > main目录下创建jniLibs文件夹，将生成的so文件（带着CPU架构目录）拷贝到jniLibs文件夹中，按照上文中的调用方式即可正常使用。
 
