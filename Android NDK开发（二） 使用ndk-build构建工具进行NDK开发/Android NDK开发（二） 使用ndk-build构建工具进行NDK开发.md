@@ -16,15 +16,15 @@
 
 在SDK Tools中安装NDK开发环境（File > Settings > Appearance & Behavior > System Settings > Android SDK > SDK Tools）：
 
-![安装NDK开发环境](http://upload-images.jianshu.io/upload_images/3270074-276cda63421330e3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![安装NDK开发环境](https://github.com/alidili/NDK/raw/main/Android%20NDK%E5%BC%80%E5%8F%91%EF%BC%88%E4%BA%8C%EF%BC%89%20%E4%BD%BF%E7%94%A8ndk-build%E6%9E%84%E5%BB%BA%E5%B7%A5%E5%85%B7%E8%BF%9B%E8%A1%8CNDK%E5%BC%80%E5%8F%91/resources/%E5%AE%89%E8%A3%85NDK%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83.png)
 
 新建一个普通的Android项目，在main目录下新建jni目录，在此目录下编写原生代码：
 
-![新建jni目录](http://upload-images.jianshu.io/upload_images/3270074-a98ffb04009e84bd.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![新建jni目录](https://github.com/alidili/NDK/raw/main/Android%20NDK%E5%BC%80%E5%8F%91%EF%BC%88%E4%BA%8C%EF%BC%89%20%E4%BD%BF%E7%94%A8ndk-build%E6%9E%84%E5%BB%BA%E5%B7%A5%E5%85%B7%E8%BF%9B%E8%A1%8CNDK%E5%BC%80%E5%8F%91/resources/%E6%96%B0%E5%BB%BAjni%E7%9B%AE%E5%BD%95.png)
 
 在main目录下新建jniLibs目录，此目录为Android Stuido加载so文件的默认目录，看下项目结构：
 
-![项目结构](http://upload-images.jianshu.io/upload_images/3270074-adce3bfbf651e862.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![项目结构](https://github.com/alidili/NDK/raw/main/Android%20NDK%E5%BC%80%E5%8F%91%EF%BC%88%E4%BA%8C%EF%BC%89%20%E4%BD%BF%E7%94%A8ndk-build%E6%9E%84%E5%BB%BA%E5%B7%A5%E5%85%B7%E8%BF%9B%E8%A1%8CNDK%E5%BC%80%E5%8F%91/resources/%E9%A1%B9%E7%9B%AE%E7%BB%93%E6%9E%84.png)
 
 # 1.快捷键配置
 
@@ -32,7 +32,7 @@
 
 **生成头文件**
 
-![生成头文件](http://upload-images.jianshu.io/upload_images/3270074-ce665091de886f5e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![生成头文件快捷设置](https://github.com/alidili/NDK/raw/main/Android%20NDK%E5%BC%80%E5%8F%91%EF%BC%88%E4%BA%8C%EF%BC%89%20%E4%BD%BF%E7%94%A8ndk-build%E6%9E%84%E5%BB%BA%E5%B7%A5%E5%85%B7%E8%BF%9B%E8%A1%8CNDK%E5%BC%80%E5%8F%91/resources/%E7%94%9F%E6%88%90%E5%A4%B4%E6%96%87%E4%BB%B6%E5%BF%AB%E6%8D%B7%E8%AE%BE%E7%BD%AE.png)
 
 - Name：javah-jni
 
@@ -76,7 +76,7 @@ javah用法:
 
 **NDK构建**
 
-![NDK构建](http://upload-images.jianshu.io/upload_images/3270074-777d0dbb5a3654aa.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![NDK构建](https://github.com/alidili/NDK/raw/main/Android%20NDK%E5%BC%80%E5%8F%91%EF%BC%88%E4%BA%8C%EF%BC%89%20%E4%BD%BF%E7%94%A8ndk-build%E6%9E%84%E5%BB%BA%E5%B7%A5%E5%85%B7%E8%BF%9B%E8%A1%8CNDK%E5%BC%80%E5%8F%91/resources/NDK%E6%9E%84%E5%BB%BA.png)
 
 ndk-build的配置和javah-jni类似，其中C:\Tools\NDK\android-ndk-r14b\ndk-build.cmd为ndk-build构建工具的路径，需要按照实际NDK安装路径进行修改。
 
@@ -84,7 +84,7 @@ ndk-build的配置和javah-jni类似，其中C:\Tools\NDK\android-ndk-r14b\ndk-b
 
 右击项目选择External Tools：
 
-![使用快捷工具](http://upload-images.jianshu.io/upload_images/3270074-4271912104f2c11c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![使用快捷工具](https://github.com/alidili/NDK/raw/main/Android%20NDK%E5%BC%80%E5%8F%91%EF%BC%88%E4%BA%8C%EF%BC%89%20%E4%BD%BF%E7%94%A8ndk-build%E6%9E%84%E5%BB%BA%E5%B7%A5%E5%85%B7%E8%BF%9B%E8%A1%8CNDK%E5%BC%80%E5%8F%91/resources/%E4%BD%BF%E7%94%A8%E5%BF%AB%E6%8D%B7%E5%B7%A5%E5%85%B7.png)
 
 # 2.NDK开发
 
@@ -118,7 +118,7 @@ public class MainActivity extends AppCompatActivity {
 
 对着MainActivity的类名右击鼠标，选择External Tools > javah-jni，控制台执行完命令后，会在jni目录生成一个头文件：
 
-![生成头文件](http://upload-images.jianshu.io/upload_images/3270074-b0843f3f6734768b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![生成头文件](https://github.com/alidili/NDK/raw/main/Android%20NDK%E5%BC%80%E5%8F%91%EF%BC%88%E4%BA%8C%EF%BC%89%20%E4%BD%BF%E7%94%A8ndk-build%E6%9E%84%E5%BB%BA%E5%B7%A5%E5%85%B7%E8%BF%9B%E8%A1%8CNDK%E5%BC%80%E5%8F%91/resources/%E7%94%9F%E6%88%90%E5%A4%B4%E6%96%87%E4%BB%B6.png)
 
 看下生成的头文件：
 
@@ -199,7 +199,7 @@ android {
 
 相当于执行了【Link C++ Project with Gradle】：
 
-![在Gradle配置中关联C++项目](http://upload-images.jianshu.io/upload_images/3270074-f72e85bec668512d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![在Gradle配置中关联C++项目](https://github.com/alidili/NDK/raw/main/Android%20NDK%E5%BC%80%E5%8F%91%EF%BC%88%E4%BA%8C%EF%BC%89%20%E4%BD%BF%E7%94%A8ndk-build%E6%9E%84%E5%BB%BA%E5%B7%A5%E5%85%B7%E8%BF%9B%E8%A1%8CNDK%E5%BC%80%E5%8F%91/resources/%E5%9C%A8Gradle%E9%85%8D%E7%BD%AE%E4%B8%AD%E5%85%B3%E8%81%94C%2B%2B%E9%A1%B9%E7%9B%AE.png)
 
 **Application.mk**
 
@@ -213,17 +213,17 @@ APP_ABI := armeabi armeabi-v7a arm64-v8a x86 x86_64 mips mips64
 
 到这里基本的开发流程就已经完成了，运行程序看下效果：
 
-![运行效果](http://upload-images.jianshu.io/upload_images/3270074-defea33c1dabda4e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![运行效果](https://github.com/alidili/NDK/raw/main/Android%20NDK%E5%BC%80%E5%8F%91%EF%BC%88%E4%BA%8C%EF%BC%89%20%E4%BD%BF%E7%94%A8ndk-build%E6%9E%84%E5%BB%BA%E5%B7%A5%E5%85%B7%E8%BF%9B%E8%A1%8CNDK%E5%BC%80%E5%8F%91/resources/%E8%BF%90%E8%A1%8C%E6%95%88%E6%9E%9C.png)
 
 分析一下APK文件，可以看到so文件已经打包进去了：
 
-![分析APK文件](http://upload-images.jianshu.io/upload_images/3270074-6c0a55936fea0448.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![分析APK文件](https://github.com/alidili/NDK/raw/main/Android%20NDK%E5%BC%80%E5%8F%91%EF%BC%88%E4%BA%8C%EF%BC%89%20%E4%BD%BF%E7%94%A8ndk-build%E6%9E%84%E5%BB%BA%E5%B7%A5%E5%85%B7%E8%BF%9B%E8%A1%8CNDK%E5%BC%80%E5%8F%91/resources/%E5%88%86%E6%9E%90APK%E6%96%87%E4%BB%B6.png)
 
 # 3.编译so文件
 
 对着jni目录右击鼠标，选择External Tools > ndk-build，会在main目录下生成libs和obj目录，编译出的so文件就在libs目录下：
 
-![编译so文件](http://upload-images.jianshu.io/upload_images/3270074-ec9577bab9ad9926.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![编译so文件](https://github.com/alidili/NDK/raw/main/Android%20NDK%E5%BC%80%E5%8F%91%EF%BC%88%E4%BA%8C%EF%BC%89%20%E4%BD%BF%E7%94%A8ndk-build%E6%9E%84%E5%BB%BA%E5%B7%A5%E5%85%B7%E8%BF%9B%E8%A1%8CNDK%E5%BC%80%E5%8F%91/resources/%E7%BC%96%E8%AF%91so%E6%96%87%E4%BB%B6.png)
 
 将so文件拷贝到jniLibs目录下就可以正常使用了，也可以在app的build.gradle文件中设置so文件的路径。
 
