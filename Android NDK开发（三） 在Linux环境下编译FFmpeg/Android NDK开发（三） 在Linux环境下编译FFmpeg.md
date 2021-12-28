@@ -136,19 +136,19 @@ $ sudo ./build_android.sh
 
 回车提示输入密码，密码不会显示出来或者显示成*号，直接输完然后回车就可以了，看下执行效果：
 
-![开始编译](http://upload-images.jianshu.io/upload_images/3270074-79f4e8aba74868b6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![开始编译](https://github.com/alidili/NDK/raw/main/Android%20NDK%E5%BC%80%E5%8F%91%EF%BC%88%E4%B8%89%EF%BC%89%20%E5%9C%A8Linux%E7%8E%AF%E5%A2%83%E4%B8%8B%E7%BC%96%E8%AF%91FFmpeg/resources/%E5%BC%80%E5%A7%8B%E7%BC%96%E8%AF%91.png)
 
 编译中：
 
-![编译中](http://upload-images.jianshu.io/upload_images/3270074-c8c76626f4f4e603.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![编译中](https://github.com/alidili/NDK/raw/main/Android%20NDK%E5%BC%80%E5%8F%91%EF%BC%88%E4%B8%89%EF%BC%89%20%E5%9C%A8Linux%E7%8E%AF%E5%A2%83%E4%B8%8B%E7%BC%96%E8%AF%91FFmpeg/resources/%E7%BC%96%E8%AF%91%E4%B8%AD.png)
 
 如果一切顺利的话，大概十多分钟就可以编译完成：
 
-![编译完成](http://upload-images.jianshu.io/upload_images/3270074-1bccd8a0be74c355.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![编译完成](https://github.com/alidili/NDK/raw/main/Android%20NDK%E5%BC%80%E5%8F%91%EF%BC%88%E4%B8%89%EF%BC%89%20%E5%9C%A8Linux%E7%8E%AF%E5%A2%83%E4%B8%8B%E7%BC%96%E8%AF%91FFmpeg/resources/%E7%BC%96%E8%AF%91%E5%AE%8C%E6%88%90.png)
 
 编译完成后，在当前目录下（ffmpeg-3.4.2）会生成一个android目录，so文件就在android > arm > lib目录下：
 
-![生成so文件](http://upload-images.jianshu.io/upload_images/3270074-34c688f5202f57fb.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![生成so文件](https://github.com/alidili/NDK/raw/main/Android%20NDK%E5%BC%80%E5%8F%91%EF%BC%88%E4%B8%89%EF%BC%89%20%E5%9C%A8Linux%E7%8E%AF%E5%A2%83%E4%B8%8B%E7%BC%96%E8%AF%91FFmpeg/resources/%E7%94%9F%E6%88%90so%E6%96%87%E4%BB%B6.png)
 
 看下生成的so包是做什么用的：
 
@@ -289,7 +289,7 @@ $ sudo ./build_android_all.sh
 
 编译完成后，生成的libffmpeg.so就在android > arm目录下：
 
-![将FFmpeg编译成一个so文件](http://upload-images.jianshu.io/upload_images/3270074-f44803c44786f0a9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![将FFmpeg编译成一个so文件](https://github.com/alidili/NDK/raw/main/Android%20NDK%E5%BC%80%E5%8F%91%EF%BC%88%E4%B8%89%EF%BC%89%20%E5%9C%A8Linux%E7%8E%AF%E5%A2%83%E4%B8%8B%E7%BC%96%E8%AF%91FFmpeg/resources/%E5%B0%86FFmpeg%E7%BC%96%E8%AF%91%E6%88%90%E4%B8%80%E4%B8%AAso%E6%96%87%E4%BB%B6.png)
 
 # 3.遇到的问题
 
@@ -297,7 +297,7 @@ $ sudo ./build_android_all.sh
 
 遇到这个错误仔细检查一遍设置的路径有没有问题，我就栽在了这个坑里：
 
-![NDK路径错误](http://upload-images.jianshu.io/upload_images/3270074-8c7da51bb7a3afaf.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![NDK路径错误](https://github.com/alidili/NDK/raw/main/Android%20NDK%E5%BC%80%E5%8F%91%EF%BC%88%E4%B8%89%EF%BC%89%20%E5%9C%A8Linux%E7%8E%AF%E5%A2%83%E4%B8%8B%E7%BC%96%E8%AF%91FFmpeg/resources/NDK%E8%B7%AF%E5%BE%84%E9%94%99%E8%AF%AF.png)
 
 **android文件夹带锁**
 

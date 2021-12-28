@@ -4,6 +4,8 @@
 
 [《Android NDK开发（二） 使用ndk-build构建工具进行NDK开发》](https://github.com/alidili/NDK/blob/main/Android%20NDK%E5%BC%80%E5%8F%91%EF%BC%88%E4%BA%8C%EF%BC%89%20%E4%BD%BF%E7%94%A8ndk-build%E6%9E%84%E5%BB%BA%E5%B7%A5%E5%85%B7%E8%BF%9B%E8%A1%8CNDK%E5%BC%80%E5%8F%91/Android%20NDK%E5%BC%80%E5%8F%91%EF%BC%88%E4%BA%8C%EF%BC%89%20%E4%BD%BF%E7%94%A8ndk-build%E6%9E%84%E5%BB%BA%E5%B7%A5%E5%85%B7%E8%BF%9B%E8%A1%8CNDK%E5%BC%80%E5%8F%91.md)
 
+[《Android NDK开发（三） 在Linux环境下编译FFmpeg》](https://github.com/alidili/NDK/blob/main/Android%20NDK%E5%BC%80%E5%8F%91%EF%BC%88%E4%B8%89%EF%BC%89%20%E5%9C%A8Linux%E7%8E%AF%E5%A2%83%E4%B8%8B%E7%BC%96%E8%AF%91FFmpeg/Android%20NDK%E5%BC%80%E5%8F%91%EF%BC%88%E4%B8%89%EF%BC%89%20%E5%9C%A8Linux%E7%8E%AF%E5%A2%83%E4%B8%8B%E7%BC%96%E8%AF%91FFmpeg.md)
+
 ## 公众号
 
 ✨ **容华谢后Tech** ✨
