@@ -8,6 +8,8 @@
 
 [《Android NDK开发（四） 将FFmpeg移植到Android平台》](https://github.com/alidili/NDK/blob/main/Android%20NDK%E5%BC%80%E5%8F%91%EF%BC%88%E5%9B%9B%EF%BC%89%20%E5%B0%86FFmpeg%E7%A7%BB%E6%A4%8D%E5%88%B0Android%E5%B9%B3%E5%8F%B0/Android%20NDK%E5%BC%80%E5%8F%91%EF%BC%88%E5%9B%9B%EF%BC%89%20%E5%B0%86FFmpeg%E7%A7%BB%E6%A4%8D%E5%88%B0Android%E5%B9%B3%E5%8F%B0.md)
 
+[《Android NDK开发（五） 开发中遇到的问题汇总》](https://github.com/alidili/NDK/blob/main/Android%20NDK%E5%BC%80%E5%8F%91%EF%BC%88%E4%BA%94%EF%BC%89%20%E5%BC%80%E5%8F%91%E4%B8%AD%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98%E6%B1%87%E6%80%BB/Android%20NDK%E5%BC%80%E5%8F%91%EF%BC%88%E4%BA%94%EF%BC%89%20%E5%BC%80%E5%8F%91%E4%B8%AD%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98%E6%B1%87%E6%80%BB.md)
+
 ## 公众号
 
 ✨ **容华谢后Tech** ✨

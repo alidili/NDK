@@ -62,11 +62,11 @@ defaultConfig {
 
 首先安装LLDB调试工具（File > Settings > Appearance & Behavior > System Settings > Android SDK > SDK Tools）：
 
-![LLDB](https://upload-images.jianshu.io/upload_images/3270074-804a3761c439c8a6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![LLDB](https://github.com/alidili/NDK/raw/main/Android%20NDK%E5%BC%80%E5%8F%91%EF%BC%88%E4%BA%94%EF%BC%89%20%E5%BC%80%E5%8F%91%E4%B8%AD%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98%E6%B1%87%E6%80%BB/resources/LLDB.png)
 
 LLDB安装完成后就可以debug源码了，和debug java代码的流程基本一致，看下效果：
 
-![debug源码](https://upload-images.jianshu.io/upload_images/3270074-25d02b38f48b01c9.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![debug源码](https://github.com/alidili/NDK/raw/main/Android%20NDK%E5%BC%80%E5%8F%91%EF%BC%88%E4%BA%94%EF%BC%89%20%E5%BC%80%E5%8F%91%E4%B8%AD%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98%E6%B1%87%E6%80%BB/resources/debug%E6%BA%90%E7%A0%81.png)
 
 在debug的过程中可能会遇到一些诡异的问题，比如下面这行报错：
 
@@ -78,11 +78,11 @@ Attention! No symbol directories found - please check your native debug configur
 
 在网上查到这样一种方法，打开Run > Edit Configurations > Debugger > Symbol Directories选项，在里面配置一下Library的路径，如下图所示：
 
-![配置Symbol Directories](https://upload-images.jianshu.io/upload_images/3270074-db8530f547f8fe5d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![配置Symbol Directories](https://github.com/alidili/NDK/raw/main/Android%20NDK%E5%BC%80%E5%8F%91%EF%BC%88%E4%BA%94%EF%BC%89%20%E5%BC%80%E5%8F%91%E4%B8%AD%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98%E6%B1%87%E6%80%BB/resources/%E9%85%8D%E7%BD%AESymbol%20Directories.png)
 
 debug运行一下，正常了，但是第二次再debug的时候继续报上面的错，继续查啊查，看到这样一条解决方案，把local.properties文件中ndk的路径改成错的，编译一下（肯定报错），再改回原来的就正常了，什么？还有这样的操作，抱着怀疑的态度试了下，居然可以了...可以了...
 
-![local.properties](https://upload-images.jianshu.io/upload_images/3270074-766ff6b8d51e8428.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![local.properties](https://github.com/alidili/NDK/raw/main/Android%20NDK%E5%BC%80%E5%8F%91%EF%BC%88%E4%BA%94%EF%BC%89%20%E5%BC%80%E5%8F%91%E4%B8%AD%E9%81%87%E5%88%B0%E7%9A%84%E9%97%AE%E9%A2%98%E6%B1%87%E6%80%BB/resources/local.properties.png)
 
 这个问题随机出现，可能是AS抽风了，遇到了可以这样试试。
 
