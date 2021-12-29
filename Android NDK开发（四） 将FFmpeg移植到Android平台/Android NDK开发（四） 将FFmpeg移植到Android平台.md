@@ -28,11 +28,11 @@
 
 **创建FFmpeg项目**
 
-![创建FFmpeg项目](https://upload-images.jianshu.io/upload_images/3270074-aa62fffc5d8f8a4d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![创建FFmpeg项目](https://github.com/alidili/NDK/raw/main/Android%20NDK%E5%BC%80%E5%8F%91%EF%BC%88%E5%9B%9B%EF%BC%89%20%E5%B0%86FFmpeg%E7%A7%BB%E6%A4%8D%E5%88%B0Android%E5%B9%B3%E5%8F%B0/resources/%E5%88%9B%E5%BB%BAFFmpeg%E9%A1%B9%E7%9B%AE.png)
 
 在创建项目时，勾选【Include C++ support】选项，然后一路下一步，到达【Customize C++ Support】设置页：
 
-![Customize C++ Support](https://upload-images.jianshu.io/upload_images/3270074-f232dd15efbec8e0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![Customize C++ Support](https://github.com/alidili/NDK/raw/main/Android%20NDK%E5%BC%80%E5%8F%91%EF%BC%88%E5%9B%9B%EF%BC%89%20%E5%B0%86FFmpeg%E7%A7%BB%E6%A4%8D%E5%88%B0Android%E5%B9%B3%E5%8F%B0/resources/Customize%20C%2B%2B%20Support.png)
 
 可以看到三个选项：
 
@@ -44,7 +44,7 @@
 
 在这里我们使用默认C++标准，不勾选下面的两个选项，点击【Finish】按钮进入下一个环节，看下项目结构：
 
-![项目结构](https://upload-images.jianshu.io/upload_images/3270074-89226ad041726414.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![项目结构](https://github.com/alidili/NDK/raw/main/Android%20NDK%E5%BC%80%E5%8F%91%EF%BC%88%E5%9B%9B%EF%BC%89%20%E5%B0%86FFmpeg%E7%A7%BB%E6%A4%8D%E5%88%B0Android%E5%B9%B3%E5%8F%B0/resources/%E9%A1%B9%E7%9B%AE%E7%BB%93%E6%9E%84.png)
 
 # 2.FFmpeg移植
 
@@ -76,7 +76,7 @@ android {
 
 看下此时的项目结构：
 
-![项目结构](https://upload-images.jianshu.io/upload_images/3270074-1d0d6cf3283b72aa.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![项目结构](https://github.com/alidili/NDK/raw/main/Android%20NDK%E5%BC%80%E5%8F%91%EF%BC%88%E5%9B%9B%EF%BC%89%20%E5%B0%86FFmpeg%E7%A7%BB%E6%A4%8D%E5%88%B0Android%E5%B9%B3%E5%8F%B0/resources/%E9%A1%B9%E7%9B%AE%E7%BB%93%E6%9E%842.png)
 
 **编译脚本**
 
@@ -289,7 +289,7 @@ Java_com_yl_ffmpeg4android_MainActivity_run(
 
 先看下报错：
 
-![编译报错](https://upload-images.jianshu.io/upload_images/3270074-1f5c22d59c051daa.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![编译报错](https://github.com/alidili/NDK/raw/main/Android%20NDK%E5%BC%80%E5%8F%91%EF%BC%88%E5%9B%9B%EF%BC%89%20%E5%B0%86FFmpeg%E7%A7%BB%E6%A4%8D%E5%88%B0Android%E5%B9%B3%E5%8F%B0/resources/%E7%BC%96%E8%AF%91%E6%8A%A5%E9%94%99.png)
 
 大概意思是编译模式不对，话说这个报错真的是让人头疼，查完百度查谷歌，也没有查到解决方法，后来一遍又一遍的看CMake文档，一个参数一个参数的试，终于解决了，心情瞬间舒畅了，来看下如何解决：
 
@@ -310,7 +310,7 @@ android {
 
 把ANDROID_ARM_MOD设置为arm就可以了，默认是thumb，OK，继续编译，什么！又报错：
 
-![编译报错](https://upload-images.jianshu.io/upload_images/3270074-2731b81a27c37a0c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![编译报错](https://github.com/alidili/NDK/raw/main/Android%20NDK%E5%BC%80%E5%8F%91%EF%BC%88%E5%9B%9B%EF%BC%89%20%E5%B0%86FFmpeg%E7%A7%BB%E6%A4%8D%E5%88%B0Android%E5%B9%B3%E5%8F%B0/resources/%E7%BC%96%E8%AF%91%E6%8A%A5%E9%94%992.png)
 
 有一些方法没有定义，还好，在ffmpeg.c中加几个空方法：
 
@@ -333,11 +333,11 @@ int hw_device_setup_for_encode(OutputStream *ost) {
 
 再次编译：
 
-![编译完成](https://upload-images.jianshu.io/upload_images/3270074-703405defa01784d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![编译完成](https://github.com/alidili/NDK/raw/main/Android%20NDK%E5%BC%80%E5%8F%91%EF%BC%88%E5%9B%9B%EF%BC%89%20%E5%B0%86FFmpeg%E7%A7%BB%E6%A4%8D%E5%88%B0Android%E5%B9%B3%E5%8F%B0/resources/%E7%BC%96%E8%AF%91%E5%AE%8C%E6%88%90.png)
 
 久违的信息出现了，看下编译出的so文件在哪里：
 
-![生成libffmpeg.so](https://upload-images.jianshu.io/upload_images/3270074-64d07accc65c7fe7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![生成libffmpeg.so](https://github.com/alidili/NDK/raw/main/Android%20NDK%E5%BC%80%E5%8F%91%EF%BC%88%E5%9B%9B%EF%BC%89%20%E5%B0%86FFmpeg%E7%A7%BB%E6%A4%8D%E5%88%B0Android%E5%B9%B3%E5%8F%B0/resources/%E7%94%9F%E6%88%90libffmpeg.so.png)
 
 # 3.测试
 
@@ -423,7 +423,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
 看下截取的gif：
 
-![截取的gif](https://upload-images.jianshu.io/upload_images/3270074-1b184e7ff61d6c85.gif?imageMogr2/auto-orient/strip)
+![截取的gif](https://github.com/alidili/NDK/raw/main/Android%20NDK%E5%BC%80%E5%8F%91%EF%BC%88%E5%9B%9B%EF%BC%89%20%E5%B0%86FFmpeg%E7%A7%BB%E6%A4%8D%E5%88%B0Android%E5%B9%B3%E5%8F%B0/resources/%E6%88%AA%E5%8F%96%E7%9A%84gif.gif)
 
 # 4.写在最后
 

@@ -6,6 +6,8 @@
 
 [《Android NDK开发（三） 在Linux环境下编译FFmpeg》](https://github.com/alidili/NDK/blob/main/Android%20NDK%E5%BC%80%E5%8F%91%EF%BC%88%E4%B8%89%EF%BC%89%20%E5%9C%A8Linux%E7%8E%AF%E5%A2%83%E4%B8%8B%E7%BC%96%E8%AF%91FFmpeg/Android%20NDK%E5%BC%80%E5%8F%91%EF%BC%88%E4%B8%89%EF%BC%89%20%E5%9C%A8Linux%E7%8E%AF%E5%A2%83%E4%B8%8B%E7%BC%96%E8%AF%91FFmpeg.md)
 
+[《Android NDK开发（四） 将FFmpeg移植到Android平台》](https://github.com/alidili/NDK/blob/main/Android%20NDK%E5%BC%80%E5%8F%91%EF%BC%88%E5%9B%9B%EF%BC%89%20%E5%B0%86FFmpeg%E7%A7%BB%E6%A4%8D%E5%88%B0Android%E5%B9%B3%E5%8F%B0/Android%20NDK%E5%BC%80%E5%8F%91%EF%BC%88%E5%9B%9B%EF%BC%89%20%E5%B0%86FFmpeg%E7%A7%BB%E6%A4%8D%E5%88%B0Android%E5%B9%B3%E5%8F%B0.md)
+
 ## 公众号
 
 ✨ **容华谢后Tech** ✨
